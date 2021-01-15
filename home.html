@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css"  href="/static/styles.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Spam Detector App
+		</div>
+		<h2>Spam Detector For Email Messages</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter Your Message/Mail Here which you want to predict Spam or Ham</p>
+		<textarea name="message" rows="6" cols="50"></textarea>
+		<br/>
+
+		<input type="Submit" class="btn-info" value="Predict">
+		
+	</form>
+		
+	</div>
+</body>
+</html>
